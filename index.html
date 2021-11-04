@@ -15,25 +15,23 @@
     display:block;
     margin: 0 auto;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    height: 100vh;
+    width: calc(100vh * 9 / 16);
+    background-color: #aaa;
   }
 </style>
 <body>
   
 </body>
-<script src="/js/main.js"></script>
+<script src="js/const.js"></script>
+<script src="js/hp.js"></script>
+<script src="js/explode.js"></script>
+<script src="js/zombie.js"></script>
+<script src="js/bullet.js"></script>
+<script src="js/player.js"></script>
+<script src="js/game.js"></script>
 <script type="text/javascript" charset="utf-8">
-  class Game {
-    contructor(w,h){
-      this.w = w
-      this.h = h
-      
-      this.canvas = document.createElement('canvas')
-      this.canvas.width = this.w
-      this.canvas.height = this.h
-      console.log(123)
-      document.body.appendChild(this.canvas)
-    }
-  }
-  const game = new Game(window.innerHeight*9/16, window.innerHeight)
+  
+  const game = new Game(1080, 1920)
 </script>
 </html>
