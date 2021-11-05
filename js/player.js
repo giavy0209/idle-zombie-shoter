@@ -6,6 +6,14 @@ class Player {
         
         this.x = this.game.w / 2 - this.w / 2
         this.y = this.game.h - this.h - 20
+
+        
+        this.game.canvas.onmousemove = ((e) => {
+            const {left , top} = this.game.canvas.getBoundingClientRect()
+            const {x , y} = e
+            this.x = x - left - this.w / 2
+            // const posY = y - top
+        })
     }
 
     update () {

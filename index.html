@@ -16,7 +16,7 @@
     margin: 0 auto;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
     height: 100vh;
-    width: calc(100vh * 9 / 16);
+    /* width: calc(100vh * 9 / 16); */
     background-color: #aaa;
   }
 </style>
@@ -32,6 +32,6 @@
 <script src="js/game.js"></script>
 <script type="text/javascript" charset="utf-8">
   
-  const game = new Game(1080, 1920)
+  const game = new Game(window.innerHeight * 9 / 16, window.innerHeight )
 </script>
 </html>
