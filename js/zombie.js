@@ -25,7 +25,7 @@ class Zombie {
         this.totalLoaded = 0
 
         this.imgs.forEach((img , index) => {
-            img.src = `/images/z${index+1}.png`
+            img.src = `images/z${index+1}.png`
             img.onload = () => this.totalLoaded += 1 
         })
     }
